@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/trackszdevsinelo/public_html/sample   #Deployement (Live) directory path
-    - /bin/cp -r * $DEPLOYPATH
-	- /bin cp * $DEPLOYPATH  
+    - export DEPLOYPATH=/home/trackszdevsinelo/public_html/sample   #Deployement (Live) directory path      
+		- /bin/rm -Rf $DEPLOYPATH
+		- /bin/mkdir $DEPLOYPATH
+		- /bin/cp -R src/ $DEPLOYPATH
