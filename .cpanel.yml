@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/trackszdevsinelo/public_html/sample   #Deployement (Live) directory path
     - /bin/cp test1.txt $DEPLOYPATH   # Upload specifc individual file into Deployement folder
+	- /bin/cp -R $DEPLOYPATH  # Test Root all files are uploading
