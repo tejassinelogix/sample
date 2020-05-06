@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/trackszdevsinelo/public_html
+    - /bin/cp test1.txt $DEPLOYPATH
